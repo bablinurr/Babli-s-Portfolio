@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev Blog</title>
+    <link rel="stylesheet" href="web.css" />
+</head>
+
+<body>
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <span class="logo"><span class="nexa">Nexa</span> <span class="growth">Growth.</span></span>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+
+                <!-- Dropdown for Blog -->
+                <li class="dropdown">
+                    <a href="index.html">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Digital Markteing</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="index.html">Projects</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+    <!-- Hero Section Start -->
+    <section class="hero-section">
+        <div class="container">
+
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Learn Modern <span>Web Development</span></h1>
+                    <p>Build websites with HTML, CSS, JavaScript, React & more. Step-by-step tutorials, real-world
+                        projects, and pro tips — all in one place.</p>
+                    <div class="hero-buttons">
+                        <a href="#Latest" class="btn primary">Start Learning</a>
+                        <a href="#latest" class="btn secondary">Browse Home</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <img src="webdevelopment.jpeg" alt="Web Dev Illustration">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Latest Blog Posts Section -->
+    <section class="latest-posts" id="Latest">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <div class="posts-grid">
+
+                <!-- Blog Card 1 -->
+                <div class="post-card">
+                    <img src="html.jpeg" alt="Blog Image">
+                    <div class="post-content">
+                        <h3>Understanding HTML Tag and Structure</h3>
+                        <p>HTML (HyperText Markup Language) is the basic structure of web pages. It uses tags like
+                            <html> to define the document,
+
+                            <head> for metadata, and
+
+                            <body> for the visible content.
+                        </p>
+                        <a href="#HTML" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 2 -->
+                <div class="post-card">
+                    <img src="css.png" alt="Blog Image">
+                    <div class="post-content">
+                        <h3>What is CSS and How Does It Work?</h3>
+                        <p>CSS (Cascading Style Sheets) is used to style HTML elements. It controls the layout, colors,
+                            fonts, and overall design of a webpage, separating content from its appearance.</p>
+                        <a href="#css" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+                <!-- Blog Card 3 -->
+                <div class="post-card">
+                    <img src="js.png" alt="Blog Image">
+                    <div class="post-content">
+                        <h3>JavaScript: Programming for the Web</h3>
+                        <p>JavaScript is a programming language used to create interactive and dynamic content on
+                            websites. It allows you to add features like animations, forms, and user interactions.</p>
+                        <a href="#js" class="read-more">Read More →</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Learn HTML Basics</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+
+        <!-- Content Section -->
+        <section class="content-section" id="HTML">
+            <h1>What is HTML?</h1>
+            <p>HTML stands for HyperText Markup Language. It is the standard language used to create and design the
+                structure of web pages.</p>
+
+            <h2>Basic Structure of an HTML Page</h2>
+            <p>An HTML document starts with a declaration and contains essential elements like
+                <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, and
+                <code>&lt;body&gt;</code>. These elements define the overall structure and content of a webpage.
+            </p>
+
+            <h2>Common HTML Tags</h2>
+            <ul>
+                <li><strong>Headings</strong>: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> are used to define
+                    headings of different levels.</li>
+                <li><strong>Paragraphs</strong>: <code>&lt;p&gt;</code> is used to write paragraphs.</li>
+                <li><strong>Links</strong>: <code>&lt;a&gt;</code> tag is used to create hyperlinks.</li>
+                <li><strong>Images</strong>: <code>&lt;img&gt;</code> tag displays images on a page.</li>
+                <li><strong>Lists</strong>: <code>&lt;ul&gt;</code> (unordered) and <code>&lt;ol&gt;</code> (ordered)
+                    lists help organize content.</li>
+                <li><strong>Divs & Spans</strong>: Used for layout and styling.</li>
+            </ul>
+
+            <h2>Why Learn HTML?</h2>
+            <p>HTML is the foundation of every website. It's easy to learn and essential for web development. Knowing
+                HTML helps you create your own websites and understand how the internet works.</p>
+
+            <h2>Real-World Application</h2>
+            <p>Even professional websites and platforms use basic HTML. Blogs, portfolios, and business sites are all
+                built on HTML at their core.</p>
+        </section>
+
+        <!-- css  -->
+        <section class="blog-section" id="css">
+            <h1>Understanding CSS: Styling Web Pages</h1>
+            <p>CSS (Cascading Style Sheets) is a fundamental tool for web design. It allows developers to create
+                visually appealing websites by controlling the layout, fonts, colors, and overall design of a webpage.
+                In this section, we’ll explore why CSS is crucial, how it works, and some tips for writing efficient
+                stylesheets.</p>
+
+            <h2>What Is CSS?</h2>
+            <p>CSS is a stylesheet language that enables web developers to style the content and elements of a webpage.
+                It helps separate the structure of the page (HTML) from its design, providing more flexibility in layout
+                and appearance. With CSS, you can control every visual aspect of a website from text color to
+                positioning of elements.</p>
+
+            <h2>Why Is CSS Important?</h2>
+            <p>Without CSS, a webpage would appear as raw HTML with minimal styling, which would be unattractive and
+                difficult to navigate. CSS adds the styling and structure that turns an ordinary webpage into a
+                polished, user-friendly site. It ensures consistency in design, allowing the same styles to be applied
+                across multiple pages with ease.</p>
+
+            <h2>Key Benefits of Using CSS</h2>
+            <ul>
+                <li><strong>Separation of Content and Design:</strong> By using CSS, the content of a page remains
+                    separate from its appearance. This makes it easier to update the layout or design without touching
+                    the content itself.</li>
+                <li><strong>Improved Website Performance:</strong> CSS allows you to reduce the file size by using
+                    external stylesheets, which means faster loading times for users.</li>
+                <li><strong>Responsive Design:</strong> With CSS, you can create responsive designs that adjust to
+                    different screen sizes, making the site more accessible on mobile devices and tablets.</li>
+                <li><strong>Consistency:</strong> CSS helps in maintaining consistent styles across your website,
+                    ensuring that fonts, colors, and layout are uniform on every page.</li>
+            </ul>
+
+            <h2>Basic CSS Syntax</h2>
+            <p>CSS is written using selectors, properties, and values. For example, to change the text color of a
+                paragraph, you would write:</p>
+            <pre><code>p {
+  color: #ff4f93;
+}</code></pre>
+
+            <h2>Tips for Writing Efficient CSS</h2>
+            <ul>
+                <li>Keep your CSS file organized with proper indentation.</li>
+                <li>Use classes and IDs to target specific elements.</li>
+                <li>Minimize the use of inline styles for cleaner code.</li>
+                <li>Use external stylesheets for better management and reusability.</li>
+            </ul>
+
+            <p>In conclusion, CSS is a powerful language that is essential for any web developer. It not only enhances
+                the appearance of a website but also improves its functionality and user experience. By mastering CSS,
+                you can create stunning websites that are visually appealing, responsive, and easy to navigate.</p>
+        </section>
+
+    </body>
+
+    </html>
+
+
+    <section class="blog-section" id="js">
+        <h1>Understanding JavaScript: The Heart of Web Development</h1>
+        <p>JavaScript is one of the most powerful programming languages used to create dynamic and interactive web
+            pages. It plays a crucial role in web development, allowing developers to enhance user experience and add
+            interactive features to websites. In this article, we will explore what JavaScript is, why it’s important,
+            and how it functions in modern web development.</p>
+
+        <h2>What is JavaScript?</h2>
+        <p>JavaScript is a high-level, interpreted programming language primarily used to add interactivity to web
+            pages. It enables developers to create dynamic content like animations, form validations, pop-ups, and much
+            more, all within the browser. JavaScript is often referred to as the “scripting language of the web” due to
+            its ability to run directly in web browsers.</p>
+
+        <h2>Why is JavaScript Important?</h2>
+        <p>JavaScript is essential because it adds functionality to static HTML pages. Without JavaScript, web pages
+            would be static and lack interactivity. It allows developers to create web applications that respond to user
+            actions in real time. Whether it’s submitting a form without refreshing the page, creating image sliders, or
+            making interactive maps, JavaScript is responsible for the smooth functioning of these features.</p>
+
+        <h2>Key Features of JavaScript</h2>
+        <ul>
+            <li><strong>Event Handling:</strong> JavaScript allows you to capture and respond to user events like
+                clicks, mouse movements, and keystrokes, enabling dynamic interactions.</li>
+            <li><strong>Asynchronous Programming:</strong> JavaScript allows asynchronous operations like fetching data
+                from APIs without blocking the user interface.</li>
+            <li><strong>Manipulating the DOM:</strong> JavaScript can dynamically change the content and structure of
+                web pages using the DOM (Document Object Model).</li>
+            <li><strong>Versatile:</strong> JavaScript can be used for front-end development (with frameworks like
+                React, Vue, Angular) as well as back-end development (with Node.js).</li>
+        </ul>
+
+        <h2>JavaScript Syntax Basics</h2>
+        <p>JavaScript code is typically written using the following syntax:</p>
+        <pre><code>let message = "Hello, World!";
+alert(message);</code></pre>
+        <p>This example shows how to declare a variable `message` and display it using an alert. JavaScript code is
+            simple, easy to learn, and provides immense power for web development.</p>
+
+        <h2>Why Learn JavaScript?</h2>
+        <p>Learning JavaScript opens up endless possibilities in web development. It’s the most widely-used language for
+            creating interactive web pages, and mastering it will allow you to build everything from simple websites to
+            complex web applications. With the advent of JavaScript frameworks and libraries, the language has become
+            even more powerful, making it an essential skill for any web developer.</p>
+
+        <h2>Tips for Mastering JavaScript</h2>
+        <ul>
+            <li>Start with the fundamentals: Learn basic syntax, variables, data types, and control structures.</li>
+            <li>Practice frequently: The more you code, the better you’ll get at solving real-world problems with
+                JavaScript.</li>
+            <li>Explore libraries and frameworks: Once comfortable with vanilla JavaScript, learn popular frameworks
+                like React, Angular, or Vue.</li>
+            <li>Debugging is key: Get comfortable with debugging tools and error messages in your browser’s developer
+                console.</li>
+        </ul>
+
+        <p>In conclusion, JavaScript is a crucial tool for modern web development. It makes websites interactive,
+            dynamic, and user-friendly. If you’re interested in becoming a web developer, learning JavaScript is the
+            first step toward building powerful and engaging web applications.</p>
+    </section>
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-box">
+                <h2 class="footer-title">About Me</h2>
+                <p class="footer-text">
+                    I'm a web developer with skills in web design, marketing, and SEO. I create clean and
+                    modern
+                    websites that deliver results.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-box">
+                <h2 class="footer-title">Get in Touch</h2>
+                <p>Email: <a href="mailto:you@example.com" class="footer-email">babliislam761@gmail.com</a></p>
+                <P> Phone No: <a href="" class="footer-email">+8801887335609</a></P>
+                <p>Address: <a href="" class="footer-email">Bhairab, Kishoreganj</a></p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h2 class="footer-title">Quick Links</h2>
+                <ul class="footer-links">
+                    <li><a href="#digital-marketing">Projects</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h2 class="footer-title">Social icons</h2>
+                <a href="https://www.facebook.com/NexaGrowthAgency" class="social-icon"><img src="fb.jpg" alt=""></a>
+                <a href="https://www.instagram.com/babli_nurr/" class="social-icon"><img src="insta.jpg" alt=""></a>
+                <a href="https://github.com/bablinurr" class="social-icon"><img src="github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/bablinurr/" class="social-icon"><img src="linkedin.png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Babli. All rights reserved.
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

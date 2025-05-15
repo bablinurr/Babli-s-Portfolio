@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+    <!-- Sticky Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <span class="logo"><span class="nexa">Nexa</span> <span class="growth">Growth.</span></span>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+
+                <!-- Dropdown for Blog -->
+                <li class="dropdown">
+                    <a href="#blog">Blog</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="blog.html">Digital Markteing</a></li>
+                        <li><a href="web.html">Web Development</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#digital-marketing">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h1>Hi, I'm <span class="highlights">Babli</span></h1>
+                <p>Digital Marketer | Front-End Developer</p>
+                <p>Based in Bangladesh</p> <br>
+                <div class="abbutton">
+                    <div class="abutton">
+                       <a href="Resume.pdf"><button> View Resume</button></a> 
+                    </div>
+                    <div class="abutton">
+                        <button>Happy Client</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <img src="1.jpg" alt="Your Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About me -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="final about.jpg" alt="About Me Photo">
+            </div>
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>
+                    I'm <strong><span>Babli</span></strong>, a passionate <span>Digital Marketer</span> and
+                    <span>Front-End Developer</span> with more than 6 months of experiences.Along with these, I also
+                    well-equipped with <span>Wordpress</span>.
+                    I enjoy creating beautiful, responsive websites and helping brands to grow online.
+                </p>
+                <p>
+                    With a strong foundation in both designing and coding, I strive to make user experiences smooth,
+                    functional, and impactful.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- My skill  -->
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+
+            <div class="skill">
+                <span>HTML & CSS</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="95%">0%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="75%">0%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Digital Marketing</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="90%">0%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <span>Wordpress</span>
+                <div class="progress-bar">
+                    <div class="progress" data-width="80%">0%</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <script>
+        function animateSkills() {
+            const progressBars = document.querySelectorAll('.progress');
+            progressBars.forEach(bar => {
+                const target = bar.getAttribute('data-width');
+                bar.style.width = target;
+                bar.textContent = target;
+            });
+        }
+
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top <= (window.innerHeight || document.documentElement.clientHeight)
+            );
+        }
+
+        let hasAnimated = false;
+        window.addEventListener('scroll', () => {
+            const section = document.querySelector('#skills');
+            if (!hasAnimated && isElementInViewport(section)) {
+                animateSkills();
+                hasAnimated = true;
+            }
+        });
+    </script>
+
+    <!-- projects  -->
+
+    <section class="digital-marketing" id="digital-marketing">
+        <h2>Projects Highlights</h2> <br>
+        <div class="content-container">
+            <div class="image">
+                <img src="yt.jpg" alt="Digital Marketing Image">
+            </div>
+            <div class="text">
+                <h3>YouTube Marketing</h3>
+                <p>
+                    With 2.7 billion monthly users and 500 hours of video uploaded every minute, standing out on YouTube
+                    is tough. That’s why YouTube SEO is crucial. By optimizing your title, description, tags, and
+                    thumbnail, you boost your chances of ranking higher in search results. In fact, 90% of
+                    top-performing videos use custom thumbnails—showing just how powerful visual appeal can be. A smart
+                    SEO strategy not only increases visibility but also drives engagement and channel growth.
+                </p>
+                <button class="see-more">See More</button>
+            </div>
+        </div> <br> <br> <br>
+
+        <div class="content-container">
+            <div class="text">
+                <h3>Meta Ads </h3>
+                <p>
+
+                    Running a successful Meta ad starts with a clear goal, defined audience, strong visuals or video,
+                    compelling copy, and a smart budget. But audience targeting is the real game-changer—*ads with
+                    precise targeting are 76% more likely to drive conversions* (WordStream). While creative matters,
+                    even the best visuals won’t work if shown to the wrong people. In fact, *80% of campaign performance
+                    depends on audience targeting* (Meta Business). Smart targeting ensures your message reaches the
+                    right users, boosting engagement and ROI.
+
+                </p>
+                <button class="see-more">See More</button>
+            </div>
+            <div class="image">
+                <img src="ad.jpg" alt="Digital Marketing Image">
+            </div>
+        </div> <br> <br> <br>
+
+        <div class="content-container">
+            <div class="image">
+                <img src="medical1.jpg" alt="Digital Marketing Image">
+            </div>
+            <div class="text">
+                <h3>Medical Website for HealthCare Clinic</h3>
+                <p>
+                    I developed a fully responsive and user-friendly medical website for a local healthcare clinic. The
+                    website allows patients to view doctor profiles, book appointments online, and access essential
+                    health services easily. It also includes an admin panel for managing schedules and patient records.
+                </p>
+                <button class="see-more">See More</button>
+            </div>
+        </div> <br> <br> <br>
+
+        <div class="content-container">
+            <div class="text">
+                <h3>Modern Furniture E-commerce Website</h3>
+                <p>
+                    I designed and developed a stylish and responsive e-commerce website named Furniture Hub, dedicated
+                    to showcasing and selling modern furniture collections. The platform offers a seamless user
+                    experience for browsing, filtering, and purchasing furniture items online.
+                </p>
+                <button class="see-more">See More</button>
+            </div>
+            <div class="image">
+                <img src="furniture.jpg" alt="Digital Marketing Image">
+            </div>
+        </div> <br> <br> <br>
+
+        <div class="content-container">
+            <div class="image">
+                <img src="Untitled.png" alt="Digital Marketing Image">
+            </div>
+            <div class="text">
+                <h3>Facebook Interface</h3>
+                <p>
+                    I created a modern Facebook-style Reels interface where users can scroll through vertical videos one
+                    at a time. The design mimics the original Facebook Reels experience with interactive features like
+                    Like, Comment, Share, and Save, positioned beside the video.
+                </p>
+                <button class="see-more">See More</button>
+            </div>
+        </div>
+
+    </section> <br> <br>
+
+
+    <!-- footer  -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- About -->
+            <div class="footer-box">
+                <h2 class="footer-title">About Me</h2>
+                <p class="footer-text">
+                    I'm a web developer with skills in web design, marketing, and SEO. I create clean and
+                    modern
+                    websites that deliver results.
+                </p>
+            </div>
+
+            <!-- Contact -->
+            <div class="footer-box">
+                <h2 class="footer-title">Get in Touch</h2>
+                <p>Email: <a href="mailto:you@example.com" class="footer-email">babliislam761@gmail.com</a></p>
+                <P> Phone No: <a href="" class="footer-email">+8801887335609</a></P>
+                <p>Address: <a href="" class="footer-email">Bhairab, Kishoreganj</a></p>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-box">
+                <h2 class="footer-title">Quick Links</h2>
+                <ul class="footer-links">
+                    <li><a href="#digital-marketing">Projects</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="Resume.pdf">Resume</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h2 class="footer-title">Social icons</h2>
+                <a href="https://www.facebook.com/NexaGrowthAgency" class="social-icon"><img src="fb.jpg" alt=""></a>
+                <a href="https://www.instagram.com/babli_nurr/" class="social-icon"><img src="insta.jpg" alt=""></a>
+                <a href="https://github.com/bablinurr" class="social-icon"><img src="github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/bablinurr/" class="social-icon"><img src="linkedin.png" alt=""></a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            &copy; 2025 Babli. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Optional JS: Scroll to top when footer email clicked
+        document.querySelector(".footer-email")?.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script> -->
+
+
+
+
+</body>
+
+</html>
